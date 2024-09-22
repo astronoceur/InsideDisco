@@ -1,0 +1,110 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #444341; 			
+    text-align: center;			
+    margin: 25px;
+}
+
+
+.container {
+    background-color: #f1f1f1; 	
+    padding: 15px;
+    text-align: center;			
+}
+
+.jj{
+    background-color: #f1f1f1; 	
+    padding: 15px;
+    text-align: center;	
+}
+
+h1 {
+
+    color: #2E2E2E;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.about h1 {
+    font-size: 16px;
+}
+
+.about p {
+    color: #050505;
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.about {
+    padding: 30px;
+    margin: 30px;
+    background-color: #fff; 
+    border-radius: 0%;
+    text-align: center;
+}
+
+img.avatar {
+    width:200px;
+    border-radius: 10%;
+    filter: grayscale(1);
+    transition: 0.5s;
+}
+
+
+img.ico1 {
+
+    background-color: rgb(74, 99, 243);
+    border-radius: 50px;
+    padding: 5vh;
+    width:80px;			
+    filter: grayscale(1);
+    transition: 0.5s;
+    
+}
+img.ico2 {
+    background-color: rgb(230, 67, 216);
+    border-radius: 50px;
+    padding: 5vh;
+    width:80px;			
+    filter: grayscale(1);
+    transition: 0.5s;
+    
+}
+img.ico3 {
+    background-color: rgb(47, 218, 218);
+    border-radius: 50px;
+    padding: 5vh;
+    width:80px;			
+    filter: grayscale(1);
+    transition: 0.5s;
+    
+}
+img.ico4 {
+    background-color: rgb(47, 202, 47);
+    border-radius: 50px;
+    padding: 5vh;
+    width:80px;			
+    filter: grayscale(1);
+    transition: 0.5s;
+    
+}
+img:hover {				
+    filter: grayscale(0);
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.negrito {
+    font-size: 20px;
+    font-weight: 700;
+}
+.kk {
+    background-color: #f1f1f1; 	
+    padding: 35px;
+    text-align: center;
+}

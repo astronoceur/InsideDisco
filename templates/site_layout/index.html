@@ -1,0 +1,47 @@
+{% load static %} 
+<!DOCTYPE html>
+<html class="no-js" lang="pt-br">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="x-ua-compatible" content="ie=edge" />
+		<title>Index</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'files/css/main.css' %}" />
+		<link rel="stylesheet" href="{% static 'files/css/normalize.css' %}" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	</head>
+	<body>
+		{% include 'site_layout/partials/_header.html' %}
+		<div class="container">
+			
+			<ul class="catalogo-filmes-lista">
+				{% for i in album %}
+				<li class="catalogo-filmes-lista-item">
+					<figure class="filme-poster">
+						<img src="{{i.imagem.url}}"/>
+						<div class="filme-poster-info">
+							<h3>{{i.titulo}}</h3>
+							<a href="{% url 'disco1' i.id %}" class="filme-poster-link"><i class="fa fa-play" aria-hidden="true"></i></a>
+						</div>
+					</figure>
+
+					<div class="filme-sinopse">
+						<h3 class="filme-sinopse-titulo">{{i.titulo}}</h3>
+						<p class="sinopse-genero">
+							<a href="" class="sinopse-genero-item">{{i.artista}}</a>
+						</p>
+						<p class="filme-nota">
+							<i class="fa fa-heart" aria-hidden="true"></i> 7.0
+						</p>
+					</div>
+				</li>
+				{% endfor %}
+			</ul>
+			
+		</div>
+	
+		{% include 'site_layout/partials/_footer.html' %}
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</html>

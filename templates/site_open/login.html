@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+</head>
+<body>
+  <div class="container " style="min-height:70vh;">
+    <form action="{% url 'login' %}" method="post"> {% csrf_token %}
+        <label for="">Usuário:</label>
+        <input type="text" name="username">
+        <label for="">Senha:</label>
+        <input type="password" name="senha" id="">
+        <input type="submit" value="Login">
+        <a href="{% url 'registro' %}" type="submit" class="button">Registrar-se</a>
+    </form>
+</div>
+</body>
+</html>
